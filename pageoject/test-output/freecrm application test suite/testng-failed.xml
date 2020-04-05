@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [freecrm application test suite]">
+  <listeners>
+    <listener class-name="com.crm.qa.extentreportlistener.ExtentReporterNG"/>
+  </listeners>
+  <test name="freecrmapptest(failed)">
+    <classes>
+      <class name="com.crm.qa.testcases.Loginpagetest">
+        <methods>
+          <include name="teardown"/>
+          <include name="start"/>
+        </methods>
+      </class> <!-- com.crm.qa.testcases.Loginpagetest -->
+      <class name="com.crm.qa.testcases.contactspagetest">
+        <methods>
+          <include name="validatenewcontact"/>
+          <include name="validatenewcontacts"/>
+          <include name="start"/>
+          <include name="checkcontactstext"/>
+        </methods>
+      </class> <!-- com.crm.qa.testcases.contactspagetest -->
+      <class name="com.crm.qa.testcases.Homepagetest">
+        <methods>
+          <include name="start"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.crm.qa.testcases.Homepagetest -->
+    </classes>
+  </test> <!-- freecrmapptest(failed) -->
+</suite> <!-- Failed suite [freecrm application test suite] -->
